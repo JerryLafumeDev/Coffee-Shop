@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title> Welcome to Port Salut Beach! </title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/58eb5e6d41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-header text-center">
+        <h1><i class="fas fa-mug-hot"></i> Orders Page <i class="fas fa-mug-hot"></i></h1>
+        <a href="/logout" class="btn btn-default btn-sm"><i class="fas fa-sign-out-alt"></i>Employee Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->        
+        <div class="col-sm-6 left">
+          <h3 class="recent">Recent Orders</h3>
+          <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <% if(!messages[i].completed) { %>
+            <li class="message">
+              <span><button class="btn btn-default btn-sm complete" title="complete order"><i class="fas fa-check-square"></i></button></span>
+              <span><%= messages[i].order %></span>
+              <span><%= messages[i].flavor %></span>
+              <span><%= messages[i].flavor2 %></span>
+              <span><%= messages[i].package %></span>
+              <span>|| <%= messages[i].name %></span>
+            </li>
+          <% }} %>
+          </ul>
+
+        <% if (user.local.email) { %>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="complete">Completed Orders</h3>
+                <ul class="messages">
+                  <% for(var i=0; i<messages.length; i++) {%>
+                    <% if(!messages[i].completed) { %>
+                    <li class="message <%= orders[i].status %>">
+                      <span class=""><%= messages[i].order %></span>
+                      <span class=""><%= messages[i].flavor %></span>
+                      <span class=""><%= messages[i].flavor2 %></span>
+                      <span class=""><%= messages[i].package %></span>
+                      <span class="">|| <%= messages[i].name %></span>
+                      <span><button class="btn btn-default btn-sm complete trash" title="complete order"><i class="fas fa-trash"></i></button></span>
+                    </li>
+                  <% }} %>
+                  </ul>
+
+            </div>
+        </div>
+
+        <% } %>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

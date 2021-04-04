@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <title>Welcome to Little Owl Express!</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58eb5e6d41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>           
+          <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Employee Login</a>
+          <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Employee Signup</a>
+   </header>
+  <section class= "center">
+    <h1></h1>
+  </section>
+
+
+<section class="CashierContainer">
+</section>
+
+   <div class="container main">
+
+       <div class="jumbotron text-center">
+           <img class="savage"src="img/logo.png" alt="21 Savage Profile Photo">
+
+           <p>Stay up with Little Owl Express</p>
+
+
+
+       </div>
+           <div class="CashierTitle top">
+            <h2>Welcome! How are you?</h2>
+            <select name="feeling" class="feeling" >
+              <option value="" disabled selected>I am feeling:</option>
+              <option>Great!</option>
+              <option>Good.</option>
+              <option>So-so</option>
+              <option>Not well.</option>
+              <option>Indiffernt</option>
+              <option>Excited!</option>
+              <option>Tired.</option>
+              <option>Hungry</option>
+            </select>
+          </div>
+  
+          <form class="CashierTitle" action="/messages" method="POST">
+            <input type="text" value="" placeholder="Customer Name" name="name" class="leftinput">
+            <input type="text" placeholder="What size drink?" name="order" class="rightinput">
+            <h2>What kind of coffee would you like? </h2>
+            <select name="flavor" class="flavor" >
+              <option value="" disabled selected>Select a Optional Flavor</option>
+              <option>Caramel</option>
+              <option>Vanilla</option>
+              <option>Hazelnut</option>
+              <option>Chocolate Syrup</option>
+              <option>White Mocha</option>
+              <option>Matcha</option>
+              <option>Coconut</option>
+              <option>Basil</option>
+              <option>Mint</option>
+            </select>
+            <select name="flavor2" class="flavor2" >
+              <option value="" disabled selected>Select a Second Flavor</option>
+              <option>Caramel</option>
+              <option>Vanilla</option>
+              <option>Hazelnut</option>
+              <option>Chocolate Syrup</option>
+              <option>White Mocha</option>
+              <option>Matcha</option>
+              <option>Coconut</option>
+              <option>Basil</option>
+              <option>Mint</option>
+            </select>
+            <select name="package" class="Size" >
+              <option value="" disabled selected>Select Your Brew</option>
+              <option>Cappuccino</option>
+              <option>Americano</option>
+              <option>Espresso</option>
+              <option>Macchiato</option>
+              <option>Affogato</option>
+              <option>Frappuccino</option>
+              <option>Nitro</option>
+              <option>Iced Coffee</option>
+            </select>
+            <button type="submit" class="btn btn-default sub"><i class="fas fa-check"></i>Submit</button>
+          </form>
+
+   </div>
+</body>
+</html>

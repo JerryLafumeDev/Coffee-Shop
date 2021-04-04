@@ -1,0 +1,147 @@
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color: darkblue;
+  font-size: 60px;
+}
+
+h2, h3{
+  font-family: 'Comfortaa', cursive;
+  font-size: 26px;
+  text-align: center;
+}
+
+label {
+  width: 45%;
+}
+
+.center {
+  text-align: center;
+}
+.CashierContainer {
+  text-align: center;
+
+}
+.CashierTitle.top{
+  color: antiquewhite;
+  margin-top: 80px;
+}
+.CashierTitle{
+  color: antiquewhite;
+}
+
+body {
+  padding-top: 80px;
+  word-wrap: break-word;
+  background: url(img/background.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+  text-align: center;
+  color: antiquewhite;
+}
+.savage {
+width: 100%;
+}
+
+.haiti {
+  height: 300px;
+  text-align: center;
+}
+.jumbotron {
+  background-image: url(img/ribbon.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 85% 145%;
+  background-position-y: 66%;
+
+}
+
+.container.main{
+  background: rgb(161 141 112 / 75%);
+  border-radius: 50%;
+  width: 591px;
+  height: 490px;
+  color: antiquewhite;
+  border: 39px solid rgba(114, 75, 75, 0.753);
+}
+.btn-default.sub{
+  padding: 1px 4px;
+  transition: all 0.25s ease-in-out;
+}
+.btn.btn-default.btn-sm{
+  background:rgba(202, 191, 167, 0.883);
+  transition: all 0.25s ease-in-out;
+  padding: 0px 4px
+}
+.btn-default.sub:hover,.btn.btn-default.btn-sm:hover{
+  background: rgba(211, 167, 167, 0.753);
+  color: antiquewhite;
+}
+input, select{
+  border: 3px solid rgba(211, 167, 167, 0.753);
+}
+select{
+  margin: 3px;
+}
+.rightinput{
+  margin-left: -5px;
+}
+.rightinput, .leftinput{
+  width: 190px;
+}
+.messages,.recent{
+  list-style: none;
+  color: antiquewhite;
+  font-size: 15px;
+}
+.complete{
+  list-style: none;
+  color: rgb(68, 62, 55) ;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.recent{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.well{
+  background-color:rgba(202, 191, 167, 0.883) !important;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+}
+.col-sm-6.left{
+  background-color: rgba(211, 167, 167, 0.753);
+  border-radius: 10px;
+}
+h1{
+  color: antiquewhite;
+}
+.feeling{
+  display: block;
+  margin: auto;
+}
+.littlecup{
+  background-image: url(img/papercup.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.done {
+  text-decoration: line-through;
+}
+.btn.btn-default.btn-sm.complete.trash{
+  
+}
